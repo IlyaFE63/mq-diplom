@@ -934,7 +934,7 @@ body {
 }
 
 /*---------------------TABLET------------------------------*/
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 641px) and (max-width: 1200px) {
 
   /*************************HEADER***************************/
   .header {
@@ -1065,4 +1065,6 @@ body {
 }
 
 /*-------------------------------MOBILE--------------------*/
-@media (min-width: 360px) and (max-width:768px) {}
+@media (max-width: 640px) {
+
+}
