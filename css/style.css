@@ -278,7 +278,7 @@ body {
 }
 
 .search-button {
-  background: url(../images/search.svg);
+  background: url(../svg/search.svg);
   background-position: center;
   background-color: #b59f5b;
   background-repeat: no-repeat;
@@ -855,7 +855,6 @@ body {
   */
 /*-----------------------------------------------------*/
 /*----------------БУРГЕР-МЕНЮ----------------------------*/
-
 .header_burger {
   display: none;
   position: relative;
@@ -867,7 +866,7 @@ body {
 .straight {
   position: absolute;
   height: 3px;
-  width: 30px;
+  width: 25px;
   background-color: white;
   left: 5px;
 }
@@ -877,11 +876,11 @@ body {
 }
 
 .straight:nth-child(2) {
-  transform: translateY(15px);
+  transform: translateY(13px);
 }
 
 .straight:nth-child(3) {
-  transform: translateY(25px);
+  transform: translateY(21px);
 }
 
 @media (max-width: 1200px) {
@@ -900,7 +899,7 @@ body {
     display: block;
     width: 100vw;
     text-align: center;
-    padding: 75px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
   }
 
   .menu-list-item:nth-child(n + 1) {
@@ -937,8 +936,133 @@ body {
 /*---------------------TABLET------------------------------*/
 @media (min-width: 768px) and (max-width: 1199px) {
 
+  /*************************HEADER***************************/
+  .header {
+    padding-bottom: 13%;
+  }
 
-/*-------------------------------MOBILE--------------------*/
-@media (min-width: 360px) and (max-width:768px){
+  .header-container {
+    margin-left: 5%;
+    margin-right: 1%;
+    padding-top: 2.7em;
+  }
+
+  .header-logo {
+    width: 155px;
+  }
+
+  .header-title {
+    font-size: 2.5em;
+    width: 650px;
+    margin-top: 67px;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  /*************************TRENDS***************************/
+  .trends_container {
+    flex-wrap: wrap;
+  }
+
+  .trends_title {
+    margin-top: 48px;
+    font-size: 1.1em;
+  }
+
+  .trends_title:after {
+    margin: 9px auto 19px auto;
+  }
+
+  .trend_post {
+    width: calc((100%/2) - 5px);
+    margin-bottom: 1%;
+    padding: 6% 20px 13px 20px;
+  }
+
+  /*************************PAGE***************************/
+
+  .page-container {
+    margin-top: 5%;
+  }
+
+  .page-main {
+    width: 51.5%;
+    margin: 0px 4.5%;
+  }
+
+  .post {
+    display: block;
+  }
+
+  .post-image,
+  .post-img {
+    width: 100%;
+  }
+
+  .info {
+    margin-top: 5%;
+  }
+
+  .post-title {
+    font-size: 1em;
+  }
+
+  .post-discription {
+    font-size: 0.9em;
+  }
+
+  .date-and-author {
+    margin-top: 35px;
+    margin-bottom: 30px;
+  }
+
+  .post:nth-last-child(n + 2) {
+    padding-bottom: 13px;
+  }
+
+  .post:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #eeeeee;
+    margin: 19px auto 28px auto;
+  }
+
+  /*************************SIDE-BAR***********************/
+  .side-bar {
+    margin-left: 7px;
+    width: 36.1%;
+    margin-right: 2%;
+  }
+
+  .card-title-link {
+    width: 100px;
+  }
+
+  /*************************SHOP***************************/
+  .shop_container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 3.12%;
+    margin-right: 3.12%;
+  }
+
+.shop_title{
+  margin-top: -8px;
+}
+
+  .product_post {
+    width: calc(100%/2 - 45px);
+  }
+  
+  .product_post:nth-child(3) {
+    margin-top: 46px;
+  }
 
 }
+
+/*-------------------------------MOBILE--------------------*/
+@media (min-width: 360px) and (max-width:768px) {}
