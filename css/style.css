@@ -442,7 +442,7 @@ body {
 
 /*-----------------------FOOTER------------------------*/
 .footer {
-  margin-top: 125px;
+  margin-top: 76px;
 }
 
 .footer-container {
@@ -687,7 +687,7 @@ body {
 }
 
 /*----------------------POPUP--------------------------*/
-/*
+
 .popup {
   position: fixed;
   width: 100%;
@@ -708,156 +708,155 @@ body {
 
 .popup_title {
   text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+
 }
 
-  .popup_content {
-    margin: 30px 0 0 0;
-    padding: 50px 30px;
-    max-width: 390px;
-    background-color: #fff;
-    position: absolute;
-  }
+.popup_content {
+  margin: 30px 0 0 0;
+  padding: 50px 30px;
+  max-width: 390px;
+  background-color: #fff;
+  position: absolute;
+}
 
-  .popup_close {
-    position: absolute;
-    top: -28px;
-    right: 0;
-    height: 20px;
-    width: 20px;
-    background-image: url(../svg/form-x.svg);
-    background-repeat: no-repeat;
-  }
+.popup_close {
+  position: absolute;
+  top: -28px;
+  right: 0;
+  height: 20px;
+  width: 20px;
+  background-image: url(../svg/form-x.svg);
+  background-repeat: no-repeat;
+}
 
-  .form_item {
-    margin: 30px 0 0 0;
-  }
+.form_item {
+  margin: 30px 0 0 0;
+}
 
-  .form_item_option {
-    display: flex;
-    flex-direction: column;
-  }
+.form_item_option {
+  display: flex;
+  flex-direction: column;
+}
 
-  .form_item_name {
-    font-size: 13px;
-    color: #000;
-  }
+.form_item_name {
+  font-size: 13px;
+  color: #000;
+}
 
-  .form_item_select {
-    width: 100%;
-    height: 50px;
-    margin: 13px 0 0 0;
-    padding: 0 15px;
-    background-color: #f4f7f6;
-    transition: ease 0.2s;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-image: url(../svg/form-arrows.svg);
-    background-size: 0.7em;
-    background-repeat: no-repeat;
-    background-position: center right 14px;
-    border: none;
-  }
+.form_item_select {
+  width: 100%;
+  height: 50px;
+  margin: 13px 0 0 0;
+  padding: 0 15px;
+  background-color: #f4f7f6;
+  background-image: url(../svg/form-arrows.svg);
+  -webkit-appearance: none;
+  background-size: 0.7em;
+  background-repeat: no-repeat;
+  background-position: center right 14px;
+  border: none;
+}
 
-  .form_item_select:focus {
-    outline: 1px solid #b59f5b;
-  }
+.form_item_select:focus {
+  outline: 1px solid #b59f5b;
+}
 
-  .form_item_option {
-    font-size: 13px;
-    color: #000;
-  }
+.form_item_option {
+  font-size: 13px;
+  color: #000;
+}
 
-  .form_radio_wrap {
-    display: flex;
-    margin: 10px 0 0 0;
-  }
+.form_radio_wrap {
+  display: flex;
+  margin: 10px 0 0 0;
+}
 
-  .form_item_radio {
-    display: flex;
-    margin: 0 0 0 17px;
-  }
+.form_item_radio {
+  display: flex;
+  margin: 0 0 0 17px;
+}
 
-  .form_item_radio:first-child {
-    margin: 0;
-  }
+.form_item_radio:first-child {
+  margin: 0;
+}
 
-  .radio_label {
-    display: flex;
-    align-items: center;
-  }
+.radio_label {
+  display: flex;
+  align-items: center;
+}
 
-  .item_radio {
-    display: none;
-  }
+.item_radio {
+  display: none;
+}
 
-  .form_radio_text:before {
-    content: '';
-    margin-right: 5px;
-    display: inline-block;
-    vertical-align: middle;
-    width: 20px;
-    height: 20px;
-    background-image: url(../svg/form-empty-circle.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 20px;
-  }
+.form_radio_text:before {
+  content: '';
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  background-image: url(../svg/form-empty-circle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
 
-  .item_radio:checked~.form_radio_text:before {
-    background-image: url(../svg/form-circle.svg);
-    transition: ease 0.9s;
-  }
+.item_radio:checked~.form_radio_text:before {
+  background-image: url(../svg/form-circle.svg);
+}
 
-  .form_radio_text {
-    font-size: 13px;
-    color: #000;
-  }
+.form_radio_text {
+  font-size: 13px;
+  color: #000;
+}
 
-  .textarea_label {
-    display: flex;
-    flex-direction: column;
-  }
+.textarea_label {
+  display: flex;
+  flex-direction: column;
+}
 
-  .your_message {
-    resize: none;
-    height: 130px;
-    background-color: #f4f7f6;
-    padding: 20px 14px;
-    border: none;
-    margin: 10px 0 0 0;
-    transition: ease 0.2s;
-  }
+.your_message {
+  resize: none;
+  height: 130px;
+  background-color: #f4f7f6;
+  padding: 20px 14px;
+  border: none;
+  margin: 10px 0 0 0;
+  transition: ease 0.2s;
+}
 
-  .your_message:focus {
-    outline: 1px solid #b59f5b;
+.your_message:focus {
+  outline: 1px solid #b59f5b;
 
-  }
+}
 
-  .form_button {
-    margin: 30px 0 0 0;
-  }
+.form_button {
+  margin: 30px 0 0 0;
+}
 
-  .form_send_button {
-    width: 100%;
-    padding: 20px 0;
-    background-color: #b59f5b;
-    color: #ffffff;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: ease 0.3s;
-  }
+.form_send_button {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #b59f5b;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: ease 0.3s;
+}
 
-  .form_send_button:hover {
-    box-shadow: 0px -1px 0px 0px rgba(185, 178, 155, 1);
-    background-color: #323232;
-  }
+.form_send_button:hover {
+  box-shadow: 0px -1px 0px 0px rgba(185, 178, 155, 1);
+  background-color: #323232;
+}
 
-  .popup-off {
-    display: none;
-  }
+.popup-off {
+  display: none;
+}
 
-  */
 /*-----------------------------------------------------*/
 /*----------------БУРГЕР-МЕНЮ----------------------------*/
 .header_burger {
@@ -921,21 +920,6 @@ body {
     text-decoration: underline;
   }
 
-  .header_burger:active {
-
-    .straight:nth-child(1) {
-      transform: rotate(45deg);
-    }
-
-    .straight:nth-child(2) {
-      transform: rotate(45deg);
-    }
-
-    .straight:nth-child(3) {
-      display: none;
-    }
-
-  }
 }
 
 /*---------------------TABLET------------------------------*/
@@ -948,8 +932,8 @@ body {
 
   .header-container {
     margin-left: 5%;
-    margin-right: 1%;
-    padding-top: 2.7em;
+    margin-right: 25px;
+    padding-top: 6.5%;
   }
 
   .header-logo {
@@ -957,9 +941,10 @@ body {
   }
 
   .header-title {
-    font-size: 2.5em;
-    width: 650px;
-    margin-top: 67px;
+    font-size: 2.4em;
+    width: 611px;
+    margin-top: 71px;
+    line-height: 1.5;
   }
 
   .menu-list {
@@ -989,7 +974,7 @@ body {
   /*************************PAGE***************************/
 
   .page-container {
-    margin-top: 5%;
+    margin-top: 9%;
   }
 
   .page-main {
@@ -1024,7 +1009,7 @@ body {
   }
 
   .post:nth-last-child(n + 2) {
-    padding-bottom: 13px;
+    padding-bottom: 0px;
   }
 
   .post:after {
@@ -1033,12 +1018,12 @@ body {
     width: 100%;
     height: 3px;
     background-color: #eeeeee;
-    margin: 19px auto 28px auto;
+    margin: 14px auto 33px auto;
   }
 
   /*************************SIDE-BAR***********************/
   .side-bar {
-    margin-left: 7px;
+    margin-left: 0px;
     width: 36.1%;
     margin-right: 2%;
   }
@@ -1056,7 +1041,7 @@ body {
   }
 
   .shop_title {
-    margin-top: -8px;
+    margin-top: 10px;
   }
 
   .product_post {
@@ -1089,6 +1074,10 @@ body {
     }
   }
 
+  .footer {
+    margin: 5% 5%;
+  }
+
 }
 
 /*-------------------------------MOBILE--------------------*/
@@ -1112,17 +1101,32 @@ body {
   .header-logo-mobile {
     display: block;
     max-width: 270px;
-    margin: 30% auto 7% auto;
+    margin: 45% auto 14% auto;
   }
 
   .header-title {
     font-size: 1.6em;
     width: 280px;
-    margin-top: 0px;
-    margin-bottom: 1.5%;
+    margin-top: -22px;
+    margin-bottom: 21.5%;
+    line-height: 1.5;
+  }
+
+  .header_burger {
+    margin: -18px 10px 0 0;
   }
 
   /*******************TRENDS************/
+
+  .trends_title {
+    font-size: 1em;
+    margin-top: 38px;
+  }
+
+  .trends_title:after {
+    margin-top: 5px;
+    margin-bottom: 25px;
+  }
 
   .trends_container {
     display: flex;
@@ -1130,6 +1134,7 @@ body {
   }
 
   .trend_post {
+    height: 230px;
     width: 100%;
     margin-bottom: 1%;
   }
@@ -1146,7 +1151,7 @@ body {
 
   .post {
     display: block;
-    margin: 0 10%;
+    margin: 0 5%;
   }
 
   .post-image,
