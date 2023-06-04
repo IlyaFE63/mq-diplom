@@ -687,6 +687,10 @@ body {
 }
 
 /*----------------------POPUP--------------------------*/
+.popup{
+  
+  display: none;
+}
 
 .popup {
   position: fixed;
@@ -696,7 +700,6 @@ body {
   top: 0;
   left: 0;
   z-index: 20;
-  display: none;
 }
 
 .popup_container {
