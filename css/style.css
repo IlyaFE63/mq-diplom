@@ -629,23 +629,34 @@ body {
 .shop_container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 .product_post {
   width: calc(100%/3 - 45px);
-}
-
-.product_info {
   display: flex;
   flex-direction: column;
+}
+
+.product_post_info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  color: #0f0d0e;
+  outline: 3px solid #d3c59d;
+  outline-offset: 20px;
+  margin: -10px 20px 0px 23px;
+  padding: 29px 0px 16px 0px;
 }
 
 .product_post_img {
   text-align: center;
 }
+
+
+
+
 
 .product_text {
   color: #0f0d0e;
@@ -656,6 +667,13 @@ body {
   flex: 1 1 auto;
   z-index: 1;
 }
+
+
+
+
+
+
+
 
 .product_post_title {
   font-weight: bold;
@@ -969,6 +987,11 @@ body {
     flex-wrap: wrap;
   }
 
+  .trend_title {
+    hyphens: auto;
+    width: 100%;
+  }
+
   .trend_link {
     margin-top: 48px;
     font-size: 17px;
@@ -986,6 +1009,20 @@ body {
 
   .trend_info {
     padding: -30px;
+    flex: 1 1 auto;
+  }
+
+  .trend_tags {
+
+    flex-wrap: wrap;
+  }
+
+  .trend_tag:nth-child(n + 1) {
+    margin-right: 19px;
+  }
+
+  .trend_tag:nth-child(n + 2) {
+    margin-left: 0px;
   }
 
   /*************************PAGE***************************/
@@ -1081,6 +1118,10 @@ body {
   .product_text {
     margin: -10px 10px 0px 10px;
   }
+
+  .product_post_info {
+    margin: -10px 5px 0px 10px;
+  }
 }
 
 @media (orientation: landscape) {
@@ -1106,7 +1147,7 @@ body {
 }
 
 .footer {
-  margin: 5% 5%;
+  margin: 5% 23px;
 }
 
 
@@ -1256,6 +1297,12 @@ body {
       margin-bottom: 1%;
     }
   }
+
+  /***********************FOOTER*****************/
+  .footer {
+    margin: 5% 12px;
+  }
+
 }
 
 .popup {
