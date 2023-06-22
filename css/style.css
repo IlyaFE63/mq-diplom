@@ -67,8 +67,8 @@ body {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1170px;
-  padding: 45px 10px 12px 10px;
+  max-width: 1200px;
+  padding: 45px 15px 12px 15px;
 }
 
 .header-logo {
@@ -107,12 +107,12 @@ body {
 /*---------------------------PAGE-----------------------*/
 .page-container {
   display: flex;
-  max-width: 1170px;
+  max-width: 1200px;
   margin-top: 62px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .post {
@@ -121,7 +121,7 @@ body {
 }
 
 .post:nth-last-child(n + 2) {
-  padding-bottom: 55px;
+  margin-bottom: 55px;
 }
 
 .post-image {
@@ -233,7 +233,7 @@ body {
 }
 
 .card:nth-last-child(n + 2) {
-  padding-bottom: 18px;
+  margin-bottom: 18px;
 }
 
 .img-card {
@@ -264,7 +264,6 @@ body {
 
 .search {
   margin-top: 67px;
-  margin-bottom: 57px;
 }
 
 .search-line {
@@ -302,6 +301,10 @@ body {
 
 .search-button:hover {
   background-color: black;
+}
+
+.aside-item {
+  margin-top: 57px;
 }
 
 .aside-title {
@@ -355,12 +358,15 @@ body {
   background-color: black;
 }
 
+.tags {
+  margin-top: 50px;
+}
+
 .tags-title {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
-  margin-top: 50px;
   margin-bottom: 22px;
 }
 
@@ -401,12 +407,15 @@ body {
   text-decoration: none;
 }
 
+.categories {
+  margin-top: 46px;
+}
+
 .categories-title {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
-  margin-top: 46px;
 }
 
 .categories-title:after {
@@ -452,10 +461,10 @@ body {
 }
 
 .footer-container {
-  max-width: 1170px;
+  max-width: 1200px;
   margin: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .footer-address {
@@ -505,11 +514,15 @@ body {
 }
 
 /*--------------------MQ-DIPLOM------------------------*/
+.trends {
+  margin-top: 60px;
+}
+
 .trends_title {
   font-weight: bold;
   font-size: 20px;
   text-align: center;
-  margin: 60px auto auto auto;
+  margin: auto;
   text-transform: uppercase;
 }
 
@@ -528,7 +541,7 @@ body {
 }
 
 .trend_post {
-  width: calc((100%/4) - 5px);
+  width: calc((100% / 4) - 5px);
   display: flex;
   flex-direction: column-reverse;
   padding: 6% 20px 22px 20px;
@@ -606,12 +619,12 @@ body {
 
 /*-------------------------SHOP------------------------*/
 .shop {
-  max-width: 1170px;
+  max-width: 1200px;
   margin: auto;
+  margin-top: 53px;
 }
 
 .shop_title {
-  margin-top: 53px;
   font-size: 20px;
   text-align: center;
   text-transform: uppercase;
@@ -629,12 +642,12 @@ body {
 .shop_container {
   display: flex;
   justify-content: space-between;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .product_post {
-  width: calc(100%/3 - 45px);
+  width: calc(100% / 3 - 45px);
   display: flex;
   flex-direction: column;
 }
@@ -654,10 +667,6 @@ body {
   text-align: center;
 }
 
-
-
-
-
 .product_text {
   color: #0f0d0e;
   outline: 3px solid #d3c59d;
@@ -667,13 +676,6 @@ body {
   flex: 1 1 auto;
   z-index: 1;
 }
-
-
-
-
-
-
-
 
 .product_post_title {
   font-weight: bold;
@@ -716,7 +718,6 @@ body {
   text-decoration: none;
 }
 
-
 /*----------------------POPUP--------------------------*/
 
 .popup {
@@ -741,7 +742,6 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
-
 }
 
 .popup_content {
@@ -823,7 +823,7 @@ body {
 }
 
 .form_radio_text:before {
-  content: '';
+  content: "";
   margin-right: 5px;
   display: inline-block;
   vertical-align: middle;
@@ -835,7 +835,7 @@ body {
   background-size: 20px;
 }
 
-.item_radio:checked~.form_radio_text:before {
+.item_radio:checked ~ .form_radio_text:before {
   background-image: url(../svg/form-circle.svg);
 }
 
@@ -861,7 +861,6 @@ body {
 
 .your_message:focus {
   outline: 1px solid #b59f5b;
-
 }
 
 .form_button {
@@ -950,12 +949,10 @@ body {
   .menu-link:hover {
     text-decoration: underline;
   }
-
 }
 
 /*---------------------TABLET------------------------------*/
 @media (min-width: 641px) and (max-width: 1200px) {
-
   /*************************HEADER***************************/
   .header {
     padding-bottom: 13%;
@@ -983,13 +980,18 @@ body {
   }
 
   /*************************TRENDS***************************/
+  .trends {
+    margin-top: 48px;
+  }
+
   .trends_container {
     flex-wrap: wrap;
   }
 
-  .trend_title {
+  .trends_title {
     hyphens: auto;
     width: 100%;
+    margin: 0;
   }
 
   .trend_link {
@@ -1002,7 +1004,7 @@ body {
   }
 
   .trend_post {
-    width: calc((100%/2) - 5px);
+    width: calc((100% / 2) - 5px);
     margin-bottom: 1%;
     padding: 6% 20px 13px 20px;
   }
@@ -1013,7 +1015,6 @@ body {
   }
 
   .trend_tags {
-
     flex-wrap: wrap;
   }
 
@@ -1029,11 +1030,11 @@ body {
 
   .page-container {
     margin-top: 9%;
+    padding: 0;
   }
 
   .page-main {
-    width: 51.5%;
-    margin: 0 30px;
+    margin: 0 35px;
   }
 
   .post {
@@ -1079,7 +1080,7 @@ body {
   /*************************SIDE-BAR***********************/
   .side-bar {
     margin-left: 0px;
-    width: 36.1%;
+    width: 270px;
     margin-right: 35px;
   }
 
@@ -1095,12 +1096,12 @@ body {
     margin-right: 35px;
   }
 
-  .shop_title {
+  .shop {
     margin-top: 10px;
   }
 
   .product_post {
-    width: calc(100%/2 - 45px);
+    width: calc(100% / 2 - 45px);
   }
 
   .product_post_img {
@@ -1125,13 +1126,11 @@ body {
 }
 
 @media (orientation: landscape) {
-
   .trends_container {
     flex-wrap: wrap;
   }
 
   .trends_title {
-    margin-top: 48px;
     font-size: 1.1em;
   }
 
@@ -1140,16 +1139,16 @@ body {
   }
 
   .trend_post {
-    width: calc((100%/4) - 5px);
+    width: calc((100% / 4) - 5px);
     margin-bottom: 1%;
     padding: 6% 20px 13px 20px;
   }
 }
 
 .footer {
-  margin: 5% 23px;
+  margin: 0 auto;
+  margin-top: 15%;
 }
-
 
 /*-------------------------------MOBILE--------------------*/
 @media (max-width: 640px) {
@@ -1188,10 +1187,12 @@ body {
   }
 
   /*******************TRENDS************/
+  .trends {
+    margin-top: 38px;
+  }
 
   .trends_title {
     font-size: 1em;
-    margin-top: 38px;
   }
 
   .trends_title:after {
@@ -1284,16 +1285,14 @@ body {
     width: calc(100% - 35px);
   }
 
-
   @media (orientation: landscape) {
-
     .trends_container {
       display: flex;
       flex-wrap: wrap;
     }
 
     .trend_post {
-      width: calc(100%/2);
+      width: calc(100% / 2);
       margin-bottom: 1%;
     }
   }
@@ -1302,7 +1301,6 @@ body {
   .footer {
     margin: 5% 12px;
   }
-
 }
 
 .popup {
